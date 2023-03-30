@@ -429,3 +429,17 @@ arraylist.c:51:13: error: assignment to ‘void *’ from ‘int’ makes pointe
 cc1: all warnings being treated as errors
 Compilation failed
 a268416
+Thu 30 Mar 2023 04:13:43 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:39:16: error: expected ‘)’ before ‘{’ token
+   39 |   if(i<=l->size{
+      |     ~          ^
+      |                )
+arraylist.c:54:1: error: expected expression before ‘}’ token
+   54 | }
+      | ^
+Compilation failed
+977fbca
