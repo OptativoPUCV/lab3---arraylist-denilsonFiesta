@@ -383,3 +383,29 @@ arraylist.c:50:22: error: assignment to ‘void *’ from ‘int’ makes pointe
 cc1: all warnings being treated as errors
 Compilation failed
 88514e7
+Thu 30 Mar 2023 04:12:47 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:39:9: error: called object is not a function or function pointer
+   39 |   if(i<=l->size()){
+      |         ^
+arraylist.c:40:5: error: too few arguments to function ‘expandir’
+   40 |     expandir();
+      |     ^~~~~~~~
+arraylist.c:13:6: note: declared here
+   13 | void expandir(ArrayList * l){
+      |      ^~~~~~~~
+arraylist.c:44:13: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   44 |         aux = *(l->data+i);
+      |             ^
+arraylist.c:49:14: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   49 |         aux2 = *(l->data+i);
+      |              ^
+arraylist.c:50:22: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   50 |         *(l->data+i) = aux;
+      |                      ^
+cc1: all warnings being treated as errors
+Compilation failed
+b6fb090
