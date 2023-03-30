@@ -28,7 +28,7 @@ void append(ArrayList * l, void * data){
   
   }
   *(l->data+l->size) = data;
-  size++;
+  l->size++;
 }
 
 void push(ArrayList * l, void * data, int i){
