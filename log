@@ -107,3 +107,9 @@ arraylist.c:26:19: error: lvalue required as left operand of assignment
       |                   ^
 Compilation failed
 17dd6f3
+Thu 30 Mar 2023 03:35:42 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+547459a
