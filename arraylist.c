@@ -51,7 +51,7 @@ void push(ArrayList * l, void * data, int i){
         aux = aux2;
       }
     }  
-    size++;
+    l->size++;
   }
 }
 
