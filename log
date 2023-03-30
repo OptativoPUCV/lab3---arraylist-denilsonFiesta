@@ -6,3 +6,16 @@ Thu 30 Mar 2023 03:26:04 PM UTC:
  tests:  0|6
 total_score: 0/70
 57c80fe
+Thu 30 Mar 2023 03:27:37 PM UTC: 
+ arraylist.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:15:29: error: expected expression before ‘ArrayList’
+   15 |   ArrayList* nuevaLista = (*ArrayList) calloc(1, sizeof(ArrayList));
+      |                             ^~~~~~~~~
+arraylist.c:15:40: error: expected ‘,’ or ‘;’ before ‘calloc’
+   15 |   ArrayList* nuevaLista = (*ArrayList) calloc(1, sizeof(ArrayList));
+      |                                        ^~~~~~
+Compilation failed
+e74b3d6
