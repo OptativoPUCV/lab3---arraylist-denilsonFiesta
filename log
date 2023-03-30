@@ -656,3 +656,33 @@ Thu 30 Mar 2023 05:47:22 PM UTC:
  tests:  11|1
 total_score: 50/70
 09f6650
+Thu 30 Mar 2023 05:49:08 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:89:19: error: expected expression before ‘;’ token
+   89 |   l = createList((;)
+      |                   ^
+arraylist.c:89:21: error: expected ‘)’ before ‘}’ token
+   89 |   l = createList((;)
+      |                     ^
+      |                     )
+   90 | 
+   91 | }
+      | ~                    
+arraylist.c:89:7: error: too many arguments to function ‘createList’
+   89 |   l = createList((;)
+      |       ^~~~~~~~~~
+arraylist.c:20:12: note: declared here
+   20 | ArrayList *createList(void) {
+      |            ^~~~~~~~~~
+arraylist.c:89:21: error: expected ‘;’ before ‘}’ token
+   89 |   l = createList((;)
+      |                     ^
+      |                     ;
+   90 | 
+   91 | }
+      | ~                    
+Compilation failed
+1f241ce
