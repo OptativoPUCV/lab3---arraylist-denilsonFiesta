@@ -86,6 +86,5 @@ int get_size(ArrayList * l){
 void clean(ArrayList * l){
 
   free(l->data);
-  l = createList((;)
-  
+  l = createList();  
 }
