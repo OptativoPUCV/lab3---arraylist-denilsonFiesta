@@ -22,7 +22,7 @@ ArrayList *createList(void) {
 }
 
 void append(ArrayList * l, void * data){
-  l->*(data+l->size) = data;
+  l->data+l->size = data;
 }
 
 void push(ArrayList * l, void * data, int i){
