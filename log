@@ -25,3 +25,13 @@ Thu 30 Mar 2023 03:27:55 PM UTC:
  tests:  0|6
 total_score: 0/70
 ec7a0d9
+Thu 30 Mar 2023 03:28:30 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘createList’:
+arraylist.c:16:22: error: expected expression before ‘void’
+   16 |   nuevaLista->data = void;
+      |                      ^~~~
+Compilation failed
+c7ed1a8
