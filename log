@@ -59,3 +59,13 @@ Thu 30 Mar 2023 03:32:23 PM UTC:
  tests:  1|5
 total_score: 10/70
 75c8562
+Thu 30 Mar 2023 03:33:34 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:25:6: error: expected identifier before ‘*’ token
+   25 |   l->*(data+l->size) = data;
+      |      ^
+Compilation failed
+37e1562
