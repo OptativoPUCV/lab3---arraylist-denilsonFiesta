@@ -36,7 +36,7 @@ void append(ArrayList * l, void * data){
 }
 
 void push(ArrayList * l, void * data, int i){
-  if(i<=l->size{
+  if(i<=l->size){
     expandir(l); 
     void* aux, aux2;
     for(int k = 0; k < l->size; k++){
