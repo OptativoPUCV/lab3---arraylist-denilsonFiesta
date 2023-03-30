@@ -409,3 +409,23 @@ arraylist.c:50:22: error: assignment to ‘void *’ from ‘int’ makes pointe
 cc1: all warnings being treated as errors
 Compilation failed
 b6fb090
+Thu 30 Mar 2023 04:13:21 PM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:39:9: error: called object is not a function or function pointer
+   39 |   if(i<=l->size()){
+      |         ^
+arraylist.c:41:16: error: variable or field ‘aux2’ declared void
+   41 |     void* aux, aux2;
+      |                ^~~~
+arraylist.c:49:14: error: assignment to ‘int’ from ‘void *’ makes integer from pointer without a cast [-Werror=int-conversion]
+   49 |         aux2 = *(l->data+i);
+      |              ^
+arraylist.c:51:13: error: assignment to ‘void *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   51 |         aux = aux2;
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+a268416
