@@ -543,3 +543,14 @@ Thu 30 Mar 2023 04:22:05 PM UTC:
  1 file changed, 2 insertions(+), 4 deletions(-)
  tests:  0|0
 fcf075f
+Thu 30 Mar 2023 04:22:34 PM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:49:14: error: ‘ArrayList’ {aka ‘struct ArrayList’} has no member named ‘datak’; did you mean ‘data’?
+   49 |         *(l->datak+k) = aux;
+      |              ^~~~~
+      |              data
+Compilation failed
+5312048
