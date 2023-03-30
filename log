@@ -79,3 +79,21 @@ arraylist.c:25:19: error: lvalue required as left operand of assignment
       |                   ^
 Compilation failed
 a2e295e
+Thu 30 Mar 2023 03:34:49 PM UTC: 
+ arraylist.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+arraylist.c: In function ‘append’:
+arraylist.c:25:6: error: ‘size’ undeclared (first use in this function); did you mean ‘dysize’?
+   25 |   if(size==capacity) l->data = realloc(data, 2*l->size);
+      |      ^~~~
+      |      dysize
+arraylist.c:25:6: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:25:12: error: ‘capacity’ undeclared (first use in this function)
+   25 |   if(size==capacity) l->data = realloc(data, 2*l->size);
+      |            ^~~~~~~~
+arraylist.c:26:19: error: lvalue required as left operand of assignment
+   26 |   l->data+l->size = data;
+      |                   ^
+Compilation failed
+caacfee
