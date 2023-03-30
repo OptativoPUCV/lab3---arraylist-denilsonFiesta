@@ -14,7 +14,7 @@ ArrayList *createList(void) {
 
   ArrayList* nuevaLista = (ArrayList*) calloc(1, sizeof(ArrayList));
 
-  nuevaLista->data =  (void*) calloc(2, sizeof(void*));
+  nuevaLista->data =  (void**) calloc(2, sizeof(void*));
   nuevaLista->capacity = 2;
   nuevaLista->size = 0;
   
@@ -24,7 +24,7 @@ ArrayList *createList(void) {
 void append(ArrayList * l, void * data){
   if(l->capacity==l->size-1){
     l->capacity *=2;
-    l->data =   (void*) realloc(data, l->capacity*sizeof(void*) );
+    l->data =  (void*) realloc(data, l->capacity*sizeof(void*) );
   }
   *(l->data+l->size) = data;
   l->size++;
