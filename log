@@ -19,3 +19,9 @@ arraylist.c:15:40: error: expected ‘,’ or ‘;’ before ‘calloc’
       |                                        ^~~~~~
 Compilation failed
 e74b3d6
+Thu 30 Mar 2023 03:27:55 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|6
+total_score: 0/70
+ec7a0d9

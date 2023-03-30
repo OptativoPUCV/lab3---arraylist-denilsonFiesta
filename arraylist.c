@@ -12,7 +12,7 @@ typedef struct ArrayList {
 
 ArrayList *createList(void) {
 
-  ArrayList* nuevaLista = (*ArrayList) calloc(1, sizeof(ArrayList));
+  ArrayList* nuevaLista = (ArrayList*) calloc(1, sizeof(ArrayList));
   
   return nuevaLista;
 }
