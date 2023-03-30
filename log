@@ -589,3 +589,14 @@ Thu 30 Mar 2023 04:28:28 PM UTC:
  tests:  8|2
 total_score: 40/70
 146b726
+Thu 30 Mar 2023 04:31:43 PM UTC: 
+ arraylist.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:59:23: error: ‘l’ is a pointer; did you mean to use ‘->’?
+   59 |   for(int k = i; k < l.size ; k++){
+      |                       ^
+      |                       ->
+Compilation failed
+e92be7e
