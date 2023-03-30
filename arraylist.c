@@ -10,6 +10,12 @@ typedef struct ArrayList {
     int size;
 } ArrayList;
 
+void expandir(ArrayList * l){
+    if(l->capacity==l->size){
+    l->capacity *=2;
+    l->data =  (void**) realloc(l->data, l->capacity*sizeof(void*) );
+}
+
 ArrayList *createList(void) {
 
   ArrayList* nuevaLista = (ArrayList*) calloc(1, sizeof(ArrayList));
@@ -22,10 +28,8 @@ ArrayList *createList(void) {
 }
 
 void append(ArrayList * l, void * data){
-  if(l->capacity==l->size){
-    l->capacity *=2;
-    l->data =  (void**) realloc(l->data, l->capacity*sizeof(void*) );
-  }
+
+  expandir(l);
   *(l->data+l->size) = data;
   l->size++;
 }

@@ -324,3 +324,27 @@ Thu 30 Mar 2023 04:01:28 PM UTC:
  tests:  3|4
 total_score: 20/70
 8edb386
+Thu 30 Mar 2023 04:03:40 PM UTC: 
+ arraylist.c | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+test.c: In function ‘expandir’:
+test.c:411:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  411 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:434:1: error: expected declaration or statement at end of input
+  434 | }
+      | ^
+test.c:8:6: error: unused variable ‘msg’ [-Werror=unused-variable]
+    8 | char msg[300];
+      |      ^~~
+At top level:
+test.c:411:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  411 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+In file included from test.c:5:
+arraylist.c:49:5: error: ‘get_size’ defined but not used [-Werror=unused-function]
+   49 | int get_size(ArrayList * l){
+      |     ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+22471a4
