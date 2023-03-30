@@ -61,7 +61,7 @@ void* get(ArrayList * l, int i){
   if(i >= l->size) return NULL;
 
   if(i < 0){
-    return *(l->data + (i*-1)-1 );
+    return *(l->data + l->size + i );
   }else{
     return *(l->data + i);
   }
