@@ -36,7 +36,22 @@ void append(ArrayList * l, void * data){
 }
 
 void push(ArrayList * l, void * data, int i){
+  if(i<=l->size()){
+    expandir(); 
+    int aux, aux2;
+    for(int k = 0; i < k->size; k++){
+      if(i==k){
+        aux = *(l->data+i);
+        *(l->data+i) = data;
+      }
+      if(i > k){
 
+        aux2 = *(l->data+i);
+        *(l->data+i) = aux;
+        aux = aux2;
+      }
+    }  
+  }
 }
 
 void* pop(ArrayList * l, int i){
