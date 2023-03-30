@@ -516,3 +516,14 @@ arraylist.c:50:22: error: ‘aux’ may be used uninitialized in this function [
 cc1: all warnings being treated as errors
 Compilation failed
 f445b15
+Thu 30 Mar 2023 04:18:25 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:50:22: error: ‘aux’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   50 |         *(l->data+i) = aux;
+      |         ~~~~~~~~~~~~~^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2dcd2ae
