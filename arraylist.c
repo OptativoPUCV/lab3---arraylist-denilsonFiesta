@@ -11,9 +11,10 @@ typedef struct ArrayList {
 } ArrayList;
 
 void expandir(ArrayList * l){
-    if(l->capacity==l->size){
+  if(l->capacity==l->size){
     l->capacity *=2;
     l->data =  (void**) realloc(l->data, l->capacity*sizeof(void*) );
+  }
 }
 
 ArrayList *createList(void) {
