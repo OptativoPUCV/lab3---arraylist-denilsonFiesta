@@ -14,7 +14,9 @@ ArrayList *createList(void) {
 
   ArrayList* nuevaLista = (ArrayList*) calloc(1, sizeof(ArrayList));
 
-  nuevaLista->data =  (void*) calloc(2, sizeof(void));
+  nuevaLista->data =  (void*) calloc(10, sizeof(void));
+  nuevaLista->capacity = 10;
+  nuevaLista->size = 0;
   
   return nuevaLista;
 }
