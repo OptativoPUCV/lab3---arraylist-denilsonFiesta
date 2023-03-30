@@ -538,3 +538,8 @@ arraylist.c:51:22: error: ‘aux’ may be used uninitialized in this function [
 cc1: all warnings being treated as errors
 Compilation failed
 b442c4b
+Thu 30 Mar 2023 04:22:05 PM UTC: 
+ arraylist.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+ tests:  0|0
+fcf075f
