@@ -56,7 +56,7 @@ void* pop(ArrayList * l, int i){
 
   void* datito = *(l->data + i); 
   
-  for(int k = i; k < l.size ; k++){
+  for(int k = i; k < l->size ; k++){
     *(l->data + k)  = *(l->data+k+1);
   }
   

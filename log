@@ -600,3 +600,9 @@ arraylist.c:59:23: error: ‘l’ is a pointer; did you mean to use ‘->’?
       |                       ->
 Compilation failed
 e92be7e
+Thu 30 Mar 2023 04:32:08 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|2
+total_score: 40/70
+0efc2e7
