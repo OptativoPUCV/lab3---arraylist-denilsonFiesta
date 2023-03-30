@@ -54,7 +54,12 @@ void push(ArrayList * l, void * data, int i){
 
 void* pop(ArrayList * l, int i){
 
-  void* datito = *(l->data + i); 
+  void* datito;
+  
+  if(i< 0){
+    datito = *(l->data + l->size+ i); 
+    i = l->size + i;
+  }else *(l->data + i);
   
   for(int k = i; k < l->size ; k++){
     *(l->data + k)  = *(l->data+k+1);

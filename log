@@ -612,3 +612,17 @@ Thu 30 Mar 2023 04:32:33 PM UTC:
  tests:  9|2
 total_score: 40/70
 dea678b
+Thu 30 Mar 2023 04:35:24 PM UTC: 
+ arraylist.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:62:9: error: statement with no effect [-Werror=unused-value]
+   62 |   }else *(l->data + i);
+      |         ^~~~~~~~~~~~~~
+arraylist.c:70:10: error: ‘datito’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   70 |   return datito;
+      |          ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bc201f6
