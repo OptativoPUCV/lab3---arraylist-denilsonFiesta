@@ -45,7 +45,7 @@ void push(ArrayList * l, void * data, int i){
         aux = *(l->data+i);
         *(l->data+i) = data;
       }
-      if(i > k){
+      if(k>i){
         aux2 = *(l->data+i);
         *(l->data+i) = aux;
         aux = aux2;
