@@ -638,3 +638,9 @@ arraylist.c:62:16: error: invalid operands to binary * (have ‘void *’ and �
       |                          void **
 Compilation failed
 f7069e5
+Thu 30 Mar 2023 04:35:51 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|2
+total_score: 40/70
+2f05c54
